@@ -1,1 +1,3 @@
-# steam-widget
+# Mi Actividad en Steam
+
+![Steam Widget](steam-widget.svg)
