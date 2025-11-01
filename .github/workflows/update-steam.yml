@@ -9,10 +9,10 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (full history)
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Importante para force push
+          fetch-depth: 0   # ¡¡ESTO ES CLAVE!!
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -25,16 +25,22 @@ jobs:
           STEAM_ID: ${{ secrets.STEAM_ID }}
         run: node .github/workflows/steam-widget.js
 
-      - name: Commit & Push (force)
+      - name: Commit & Push (force safe)
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add steam-widget.svg
+
           if git diff --staged --quiet; then
             echo "No hay cambios en el SVG"
             exit 0
-          else
-            git commit -m "Actualizado widget de Steam $(date)"
-            git pull --rebase origin main || true
-            git push --force-with-lease origin main
           fi
+
+          git commit -m "Actualizado widget de Steam $(date +'%Y-%m-%d %H:%M')"
+
+          # Forzar pull con rebase
+          git fetch origin main
+          git rebase origin/main || git rebase --abort
+
+          # Push seguro
+          git push --force-with-lease origin main
