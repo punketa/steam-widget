@@ -1,0 +1,6 @@
+<svg width="500" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="180" fill="#1a1a1a" rx="16"/>
+  <text x="250" y="90" font-family="Segoe UI, sans-serif" font-size="18" fill="#666" text-anchor="middle">
+    Cargando widget de Steam...
+  </text>
+</svg>

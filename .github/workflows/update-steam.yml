@@ -1,0 +1,34 @@
+name: Actualizar Widget de Steam
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Cada 30 minutos
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/steam-widget.js'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar SVG
+        env:
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          STEAM_ID: ${{ secrets.STEAM_ID }}
+        run: node .github/workflows/steam-widget.js
+
+      - name: Commit & Push
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add steam-widget.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualizado widget de Steam" && git push)
