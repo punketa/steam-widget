@@ -16,7 +16,7 @@
   <text x="130" y="45" class="title">punketa</text>
 
   <!-- Estado -->
-  <text x="130" y="70" class="subtitle">Currently: Offline</text>
+  <text x="130" y="70" class="subtitle">Currently: Online</text>
 
   <!-- Nivel -->
   <circle cx="40" cy="110" r="16" fill="#2e8b57" />
