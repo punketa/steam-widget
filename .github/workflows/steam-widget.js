@@ -83,7 +83,7 @@ const svg = `
   <text x="130" y="45" class="title">${player.personaname || 'Steam User'}</text>
 
   <!-- Estado -->
-  <text x="130" y="70" class="subtitle">${isPlaying ? 'jugando' : 'estado'} ${isPlaying ? player.gameextrainfo : (player.personastate === 1 ? 'Online' : 'Offline')}</text>
+  <text x="130" y="70" class="subtitle">${isPlaying ? 'Playing:' : 'estado'} ${isPlaying ? player.gameextrainfo : (player.personastate === 1 ? 'Online' : 'Offline')}</text>
 
   <!-- Nivel -->
   <circle cx="40" cy="${height - 30}" r="16" fill="#2e8b57" />
