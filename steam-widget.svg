@@ -1,7 +1,8 @@
-<svg width="500" height="240" xmlns="http://www.w3.org/2000/svg">
-  <rect width="500" height="240" fill="#111" rx="16"/>
+<svg width="540" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="540" height="180" fill="#111" rx="16"/>
   <text x="20" y="40" font-family="Segoe UI" font-size="20" fill="#fff">punketa</text>
   <text x="20" y="70" font-family="Segoe UI" font-size="16" fill="#aaa">Nivel 47 • 351 juegos</text>
-  <text x="20" y="100" font-family="Segoe UI" font-size="16" fill="#aaa">Jugando Wallpaper Engine</text>
-  <image href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/header.jpg?t=1739211362" x="20" y="120" height="100"/>
+  <text x="20" y="100" font-family="Segoe UI" font-size="16" fill="#aaa">Online</text>
+  <image x="460" y="20" width="64" height="64" href="https://avatars.steamstatic.com/7fe4673e7571c0ba3585444df225f973b31f631c_full.jpg" />
+  
 </svg>
