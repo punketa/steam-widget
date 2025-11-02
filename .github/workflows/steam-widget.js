@@ -86,7 +86,7 @@ const svg = `
     </style>
   </defs>
 
-  <rect width="540" height="${height}" rx="16" fill="#1b1b1b"/>
+  <rect width="540" height="${height}" rx="16" fill="#000000"/>
 
   <!-- Avatar -->
   ${avatarBase64 ? `<image x="20" y="20" width="96" height="96" href="${avatarBase64}" />` : ''}
