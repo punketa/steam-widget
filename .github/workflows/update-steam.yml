@@ -2,7 +2,7 @@ name: Steam Widget
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Cada 30 minutos
+    - cron: '*/5 * * * *'  # Cada 30 minutos
   workflow_dispatch:
 
 jobs:
