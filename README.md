@@ -1,3 +1,9 @@
-# 🎮 Mi Actividad en Steam
+<div align="center">
 
-![Steam Widget](steam-widget.svg)
+# Mi Actividad en Steam
+
+![Steam Widget](https://raw.githubusercontent.com/punketa/steam-widget/main/steam-widget.svg)
+
+> Se actualiza cada minuto
+
+</div>
