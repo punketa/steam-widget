@@ -1,7 +1,3 @@
-<div align="center">
-
 # Mi Actividad en Steam
 
-![Steam Widget](https://raw.githubusercontent.com/punketa/steam-widget/main/steam-widget.svg)
-
-</div>
+<image-card alt="Steam Widget" src="https://raw.githubusercontent.com/punketa/steam-widget/main/steam-widget.svg"></image-card>
