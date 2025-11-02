@@ -43,14 +43,15 @@ async function generateSVG() {
     }
   }
 
-  const height = isPlaying ? 240 : 180;
+  const height = isPlaying ? 260 : 180;
   const svg = `
 <svg width="500" height="${height}" xmlns="http://www.w3.org/2000/svg">
   <rect width="500" height="${height}" fill="#111" rx="16"/>
   <text x="20" y="40" font-family="Segoe UI" font-size="20" fill="#fff">${player.personaname || 'Steam User'}</text>
   <text x="20" y="70" font-family="Segoe UI" font-size="16" fill="#aaa">Nivel ${steamLevel} • ${gameCount} juegos</text>
   <text x="20" y="100" font-family="Segoe UI" font-size="16" fill="#aaa">${isPlaying ? 'Jugando ' + player.gameextrainfo : (player.personastate === 1 ? 'Online' : 'Offline')}</text>
-  ${isPlaying && gameHeader ? `<image href="${gameHeader}" x="20" y="120" height="100"/>` : ''}
+  ${player.avatarfull ? `<image x="410" y="20" width="64" height="64" href="${player.avatarfull}" />` : ''}
+  ${isPlaying && gameHeader ? `<image x="20" y="130" width="460" height="100" href="${gameHeader}" />` : ''}
 </svg>
 `.trim();
 
