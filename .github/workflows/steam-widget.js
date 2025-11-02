@@ -60,12 +60,17 @@ async function generateSVG() {
   }
 
 const height = isPlaying ? 180 : 140;
-
+  
+// Determinar color del nombre según estado
+let nameColor = '#888888'; // Gris (Offline)
+if (player.personastate === 1) {
+  nameColor = isPlaying ? '#90ee90' : '#1E90FF'; // Verde si juega, Azul si online
+}
 const svg = `
 <svg width="540" height="${height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .title { font-family: 'Segoe UI'; font-size: 20px; fill: #90ee90; }
+      .title { font-family: 'Segoe UI'; font-size: 20px; fill: ${nameColor}; }
       .subtitle { font-family: 'Segoe UI'; font-size: 14px; fill: #ccc; }
       .label { font-family: 'Segoe UI'; font-size: 12px; fill: #aaa; }
       .count { font-family: 'Segoe UI'; font-size: 12px; fill: #fff; }
