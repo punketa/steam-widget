@@ -59,7 +59,7 @@ async function generateSVG() {
     }
   }
 
-  const height = isPlaying ? 260 : 180;
+  const height = isPlaying ? 180 : 140;
 const svg = `
 <svg width="540" height="${height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
