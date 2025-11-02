@@ -2,7 +2,7 @@ name: Steam Widget
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Cada 30 minutos
+    - cron: '*/5 * * * *'  # Cada 5 minutos
   workflow_dispatch:
 
 jobs:
@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          git add steam-widget.svg
+          git add steam-widget.svg README.md
           if git diff --staged --quiet; then
             echo "Sin cambios"
             exit 0
