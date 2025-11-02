@@ -2,7 +2,7 @@ name: Steam Widget
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Cada 30 minutos
+    - cron: '*/30 * * * *'  # Cada 30 minutos
   workflow_dispatch:
 
 jobs:
@@ -36,8 +36,4 @@ jobs:
             exit 0
           fi
           git commit -m "Steam Widget: $(date +'%H:%M')"
-          git fetch origin main
-          git reset --hard origin/main
-          git add steam-widget.svg
-          git commit -m "Steam Widget: $(date +'%H:%M')" || true
-          git push origin main --force-with-lease
+          git push origin main
