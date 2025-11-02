@@ -68,7 +68,7 @@ async function generateSVG() {
     }
   }
 
-const height = isPlaying ? 180 : 140;
+const height = isPlaying ? 180 : 160;
   
 // Determinar color del nombre según estado
 let nameColor = '#888888'; // Gris (Offline)
