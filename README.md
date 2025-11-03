@@ -20,19 +20,20 @@ STEAM_ID = ( your-steamid64 ) </br>
 ## How It Works:
 1. GitHub Actions (.github/workflows/steam-widget.yml) </br>
 -Schedule: It runs every 5 min. </br>
-// </br>
-Note on update frequency: </br>
-Even though the cron is set to every 5 minutes, GitHub Actions often delays scheduled runs (queue time, runner availability, etc.).
-In practice, updates may take 6–15 minutes or longer.
-You can always trigger a run manually using the "Run workflow" button.</br> // </br>
 -Secrets – It takes STEAM_API_KEY (your Steam Web API key) and STEAM_ID (your SteamID64). </br>
 -Node 20 – It executes steam-widget.js. </br>
 -Commit – only when the SVG actually changed. </br>
+```xml
+Note on update frequency:
+Even though the cron is set to every 5 minutes, GitHub Actions often delays scheduled runs (queue time, runner availability, etc.).
+In practice, updates may take 6–15 minutes or longer.
+You can always trigger a run manually using the "Run workflow" button.
+```
 
 2. Generator Script (.github/workflows/steam-widget.js) </br>
 The script fetches data from the Steam Web API, downloads your avatar and (if playing) the game header image, and builds an SVG with embedded images (as Base64).
 
-## Manual Badges: Games, Years of Service & Profile Icons
+## Manual Badges: Games, Years of Service & Profile Badge Icons
 
 Important: The "Games Owned", "Years of Service" and "Profile badge" icons are not generated automatically. (They are not included in the API) </br>
 You must manually find the images, convert them to Base64, and paste them into the script. </br>
@@ -48,22 +49,17 @@ Profile badge: <https://www.steamcardexchange.net/index.php> </br>
 -Copy the full data:image/png;base64,... string </br>
 
 3. Paste into the Script: </br>
-Open .github/workflows/steam-widget.js and replace these lines: </br>
+Open (.github/workflows/steam-widget.js) and replace these lines: </br>
 ```xml
-// Games Owned </br>
-<image x="160" y="${height - 48}" width="40" height="40" href="your_img_base64" /></br>
-// Years of service </br>
-<image x="210" y="${height - 48}" width="40" height="40" href="your_img_base64" /></br>
+// Games Owned
+<image x="160" y="${height - 48}" width="40" height="40" href="your_img_base64" />
+// Years of service
+<image x="210" y="${height - 48}" width="40" height="40" href="your_img_base64" />
 ```
-
-(Optional) Add a custom background
-Encode any image as base64 and replace the line:
-jsconst miniProfileBase64 = 'data:image/png;base64,iVBORw0KGgo...';
-Or just leave it empty – the widget will use a solid dark overlay.
 
 ## Privacy & Requirements
 -Your Steam profile must be public.</br>
--No data is stored – everything is embedded in the SVG.</br>
+-No data is stored:  everything is embedded in the SVG.</br>
 -Only uses official Steam Web API.</br>
 -Push – the first workflow run will generate steam-widget.svg.</br>
 
