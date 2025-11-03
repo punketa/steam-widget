@@ -71,7 +71,7 @@ Open (.github/workflows/steam-widget.js) and replace these lines: </br>
 [![Steam Widget](steam-widget.svg)](https://github.com/punketa/steam-widget)
 
 -Offline: </br>
-<img width="547" height="184" alt="image" src="https://github.com/user-attachments/assets/5f6d4de8-8389-4621-b721-a1df99953e91" />
+<img width="544" height="180" alt="image" src="https://github.com/user-attachments/assets/e94eb729-a620-4651-8bc7-d238a8fe9edc" />
 
 -Online: </br>
 <img width="544" height="180" alt="image" src="https://github.com/user-attachments/assets/81627acf-e266-4082-a519-7bb01d59584b" />
