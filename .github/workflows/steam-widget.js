@@ -96,7 +96,7 @@ async function generateSVG() {
   <rect width="540" height="${height}" rx="16" fill="#000000"/>
 
   <!-- Avatar -->
-  ${avatarBase64 ? `<image x="20" y="20" width="96" height="96" href="${avatarBase64}" rx="12" ry="12" />` : ''}
+  ${avatarBase64 ? `<image x="20" y="20" width="96" height="96" href="${avatarBase64}" />` : ''}
   
   <!-- User -->
   <text x="130" y="45" class="title">${player.personaname || 'Steam User'}</text>
