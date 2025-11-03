@@ -51,10 +51,12 @@ Profile badge: <https://www.steamcardexchange.net/index.php> </br>
 3. Paste into the Script: </br>
 Open (.github/workflows/steam-widget.js) and replace these lines: </br>
 ```xml
-// Games Owned
+<!-- Games Owned Icon -->
 <image x="160" y="${height - 48}" width="40" height="40" href="your_img_base64" />
-// Years of service
+<!-- Years of Sevice -->
 <image x="210" y="${height - 48}" width="40" height="40" href="your_img_base64" />
+<!-- Profile Badge -->
+  <image x="260" y="${height - 52}" width="48" height="48" href="your_img_base64" />
 ```
 
 ## Privacy & Requirements
