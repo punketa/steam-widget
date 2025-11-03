@@ -68,7 +68,7 @@ async function generateSVG() {
     }
   }
 
-  // Mini profile base64 (optional)
+  // Mini profile base64 (opcional)
   const miniProfileBase64 = 'data:'; 
   
   const height = 180;
@@ -88,6 +88,7 @@ async function generateSVG() {
       .label { font-family: 'Segoe UI'; font-size: 12px; fill: #aaa; }
       .count { font-family: 'Segoe UI'; font-size: 12px; fill: #fff; }
     </style>
+  </defs>
 
   <!-- Background -->
   <image x="0" y="0" width="540" height="${height}" href="${miniProfileBase64}" />
