@@ -63,12 +63,13 @@ Open (.github/workflows/steam-widget.js) and replace these lines: </br>
 -Only uses official Steam Web API.</br>
 -Push – the first workflow run will generate steam-widget.svg.</br>
 
-# 🎮 Mi Actividad en Steam
+# 🎮 EXAMPLES
 
-![Steam widget](https://cdn.jsdelivr.net/gh/punketa/steam-widget/steam-widget.svg)
-![Steam Widget](steam-widget.svg)
-![Steam Widget](https://github.com/punketa/steam-widget/blob/main/steam-widget.svg)
-![Steam Widget](https://raw.githubusercontent.com/punketa/steam-widget/main/steam-widget.svg)
-![Steam widget](https://raw.githubusercontent.com/punketa/steam-widget/main/steam-widget.svg?refresh=1)
+-Mine: </br>
+[![Steam Widget](steam-widget.svg)](https://github.com/punketa/steam-widget)
 
+-Offline:
 
+-Online:
+
+-Playing:
