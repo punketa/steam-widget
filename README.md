@@ -71,6 +71,7 @@ Open (.github/workflows/steam-widget.js) and replace these lines: </br>
 -Offline: </br>
 
 -Online: </br>
+<img width="544" height="180" alt="image" src="https://github.com/user-attachments/assets/81627acf-e266-4082-a519-7bb01d59584b" />
 
 -Playing: </br>
 <img width="547" height="184" alt="image" src="https://github.com/user-attachments/assets/d889d683-aa29-4c02-9215-36980582005b" />
