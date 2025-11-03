@@ -68,8 +68,9 @@ Open (.github/workflows/steam-widget.js) and replace these lines: </br>
 -Mine: </br>
 [![Steam Widget](steam-widget.svg)](https://github.com/punketa/steam-widget)
 
--Offline:
+-Offline: </br>
 
--Online:
+-Online: </br>
 
--Playing:
+-Playing: </br>
+<img width="547" height="184" alt="image" src="https://github.com/user-attachments/assets/d889d683-aa29-4c02-9215-36980582005b" />
