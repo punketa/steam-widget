@@ -67,7 +67,7 @@ Open (.github/workflows/steam-widget.js) and replace these lines: </br>
 
 # 🎮 EXAMPLES
 
--Mine: </br>
+-Mine currently: </br>
 [![Steam Widget](steam-widget.svg)](https://github.com/punketa/steam-widget)
 
 -Offline: </br>
