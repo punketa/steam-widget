@@ -21,7 +21,7 @@
   <text x="130" y="45" class="title">punketa</text>
 
   <!-- Status -->
-  <text x="130" y="70" class="subtitle">Playing : Spacewar</text>
+  <text x="130" y="70" class="subtitle">Currently : Offline</text>
 
   <!-- Level -->
   <circle cx="40" cy="150" r="16" fill="#2e8b57" />
