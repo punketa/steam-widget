@@ -16,6 +16,8 @@ Use <https://steamid.io> → paste your profile URL → copy SteamID64 </br>
 Settings → Secrets and variables → Actions </br>
 STEAM_API_KEY = ( your-key ) </br>
 STEAM_ID = ( your-steamid64 ) </br>
+4. Paste the vsg in your readme.md of your profile repo.
+<img width="612" height="84" alt="image" src="https://github.com/user-attachments/assets/da5a9adc-7ab6-4390-ab44-50f93eb4e3d6" />
 
 ## How It Works:
 1. GitHub Actions (.github/workflows/steam-widget.yml) </br>
