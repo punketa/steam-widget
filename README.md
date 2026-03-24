@@ -12,7 +12,7 @@ You can embed it anywhere Markdown or HTML is allowed.
 <https://steamcommunity.com/dev/apikey> </br>
 2. Find your SteamID64: </br>
 Use <https://steamid.io> → paste your profile URL → copy SteamID64 </br>
-3. Add secrets to the repo: </br>
+3. Fork the repo and add secrets to the repo: </br>
 Settings → Secrets and variables → Actions </br>
 STEAM_API_KEY = ( your-key ) </br>
 STEAM_ID = ( your-steamid64 ) </br>
