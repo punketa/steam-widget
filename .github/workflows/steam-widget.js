@@ -46,6 +46,7 @@ async function generateSVG() {
   ]);
 
   const player = summary.response?.players?.[0] || {};
+  const realName = player.realname || '';
   const gameCount = games.response?.game_count || 0;
   const steamLevel = level.response?.player_level || 0;
   const isPlaying = !!player.gameextrainfo;
@@ -101,7 +102,8 @@ async function generateSVG() {
   
   <!-- User -->
   <text x="130" y="45" class="title">${player.personaname || 'Steam User'}</text>
-
+  ${realName ? `<text x="130" y="60" class="label">${realName}</text>` : ''}
+  
   <!-- Status -->
   <text x="130" y="70" class="subtitle">${isPlaying ? 'Playing :' : 'Currently :'} ${isPlaying ? player.gameextrainfo : (player.personastate === 1 ? 'Online' : 'Offline')}</text>
 
