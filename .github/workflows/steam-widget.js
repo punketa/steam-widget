@@ -3,7 +3,7 @@ const https = require('https');
 
 const API_KEY = process.env.STEAM_API_KEY;
 const STEAM_ID = process.env.STEAM_ID;
-const FAVORITE_GAME_ID = '1091500'; // cambia si quieres
+const FAVORITE_GAME_ID = '1174180'; // cambia si quieres
 
 if (!API_KEY || !STEAM_ID) {
   console.error("API_KEY o STEAM_ID missing");
