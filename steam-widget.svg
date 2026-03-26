@@ -21,10 +21,10 @@
   <text x="130" y="45" class="title">punketa</text>
 
   <!-- Realname -->
-  <text x="130" y="70" class="label">dylaи ☔</text>
+  <text x="130" y="65" class="label">dylaи ☔</text>
   
   <!-- Status -->
-  <text x="130" y="90" class="subtitle">Currently : Offline</text>
+  <text x="130" y="85" class="subtitle">Currently : Offline</text>
 
   <!-- Level -->
   <circle cx="40" cy="150" r="16" fill="#2e8b57" />
