@@ -76,7 +76,7 @@ async function generateSVG() {
 
   favoriteHeader = await getGameHeader(FAVORITE_GAME_ID);
 
-  const height = 180;
+  const height = 200;
 
   let nameColor = '#888';
   if (player.personastate === 1) {
