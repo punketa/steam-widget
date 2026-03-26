@@ -99,14 +99,14 @@ async function generateSVG() {
   <text x="130" y="45" class="title">${player.personaname || 'Steam User'}</text>
   ${realName ? `<text x="130" y="65" class="label">${realName}</text>` : ''}
 
-  <text x="130" y="85" class="subtitle">
+  <text x="130" y="95" class="subtitle">
     ${isPlaying ? 'Playing :' : 'Currently :'} 
     ${isPlaying ? player.gameextrainfo : (player.personastate === 1 ? 'Online' : 'Offline')}
   </text>
 
   <!-- ⭐ FAVORITE TITLE ALINEADO -->
   ${!isPlaying && favoriteHeader ? `
-    <text x="300" y="45" class="subtitle">Favorite Game</text>
+    <text x="300" y="45" class="subtitle">Favorite Game:</text>
     <image x="300" y="55" width="240" height="96" href="${favoriteHeader}" />
   ` : ''}
 
@@ -121,8 +121,8 @@ async function generateSVG() {
   ` : ''}
 
   <!-- Level -->
-  <circle cx="40" cy="${height - 30}" r="16" fill="#2e8b57"/>
-  <text x="34" y="${height - 26}" font-size="12" fill="#fff">${steamLevel}</text>
+  <circle cx="35" cy="${height - 30}" r="16" fill="#2e8b57"/>
+  <text x="29" y="${height - 26}" font-size="12" fill="#fff">${steamLevel}</text>
 
   <!-- Games -->
   <text x="70" y="${height - 26}" class="count">${gameCount} Games</text>
