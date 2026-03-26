@@ -13,7 +13,7 @@
   <text x="130" y="45" class="title">punketa</text>
   <text x="130" y="65" class="label">dylaи ☔</text>
 
-  <text x="130" y="95" class="subtitle">
+  <text x="130" y="85" class="subtitle">
     Currently : 
     Offline
   </text>
@@ -27,8 +27,8 @@
   
 
   <!-- Level -->
-  <circle cx="35" cy="170" r="16" fill="#2e8b57"/>
-  <text x="40" y="174" font-size="12" fill="#fff">48</text>
+  <circle cx="40" cy="170" r="16" fill="#2e8b57"/>
+  <text x="34" y="174" font-size="12" fill="#fff">48</text>
 
   <!-- Games -->
   <text x="70" y="174" class="count">319 Games</text>
