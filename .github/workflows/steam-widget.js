@@ -106,16 +106,16 @@ async function generateSVG() {
 
   <!-- ⭐ FAVORITE TITLE ALINEADO -->
   ${!isPlaying && favoriteHeader ? `
-    <text x="320" y="45" class="subtitle">Favorite Game:</text>
-    <image x="300" y="55" width="240" height="96" href="${favoriteHeader}" />
+    <text x="340" y="45" class="subtitle">Favorite Game:</text>
+    <image x="320" y="55" width="240" height="96" href="${favoriteHeader}" />
   ` : ''}
 
   ${isPlaying && gameHeader ? `
-    <text x="320" y="15" class="label">Playing:</text>
-    <image x="300" y="20" width="115" height="96" href="${gameHeader}" />
+    <text x="340" y="15" class="label">Playing:</text>
+    <image x="320" y="20" width="115" height="96" href="${gameHeader}" />
 
     ${favoriteHeader ? `
-      <text x="425" y="15" class="label">Fav</text>
+      <text x="425" y="15" class="label">Fav:</text>
       <image x="425" y="20" width="115" height="96" href="${favoriteHeader}" />
     ` : ''}
   ` : ''}
