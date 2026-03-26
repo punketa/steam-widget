@@ -27,8 +27,8 @@
   
 
   <!-- Level -->
-  <circle cx="30" cy="170" r="16" fill="#2e8b57"/>
-  <text x="34" y="174" font-size="12" fill="#fff">48</text>
+  <circle cx="35" cy="170" r="16" fill="#2e8b57"/>
+  <text x="40" y="174" font-size="12" fill="#fff">48</text>
 
   <!-- Games -->
   <text x="70" y="174" class="count">319 Games</text>
