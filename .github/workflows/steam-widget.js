@@ -102,10 +102,12 @@ async function generateSVG() {
   
   <!-- User -->
   <text x="130" y="45" class="title">${player.personaname || 'Steam User'}</text>
+
+  <!-- Realname -->
   ${realName ? `<text x="130" y="60" class="label">${realName}</text>` : ''}
   
   <!-- Status -->
-  <text x="130" y="70" class="subtitle">${isPlaying ? 'Playing :' : 'Currently :'} ${isPlaying ? player.gameextrainfo : (player.personastate === 1 ? 'Online' : 'Offline')}</text>
+  <text x="130" y="82" class="subtitle">${isPlaying ? 'Playing :' : 'Currently :'} ${isPlaying ? player.gameextrainfo : (player.personastate === 1 ? 'Online' : 'Offline')}</text>
 
   <!-- Level -->
   <circle cx="40" cy="${height - 30}" r="16" fill="#2e8b57" />
