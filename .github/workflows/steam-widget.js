@@ -110,15 +110,10 @@ async function generateSVG() {
     <image x="320" y="55" width="240" height="96" href="${favoriteHeader}" />
   ` : ''}
 
-  ${isPlaying && gameHeader ? `
-    <text x="340" y="15" class="label">Playing:</text>
-    <image x="320" y="20" width="115" height="96" href="${gameHeader}" />
-
-    ${favoriteHeader ? `
-      <text x="425" y="15" class="label">Fav:</text>
-      <image x="425" y="20" width="115" height="96" href="${favoriteHeader}" />
-    ` : ''}
-  ` : ''}
+${isPlaying && gameHeader ? `
+  <text x="340" y="45" class="subtitle">Playing:</text>
+  <image x="320" y="55" width="240" height="96" href="${gameHeader}" />
+` : ''}
 
   <!-- Level -->
   <circle cx="35" cy="${height - 30}" r="16" fill="#2e8b57"/>
