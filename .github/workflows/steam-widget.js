@@ -84,7 +84,7 @@ async function generateSVG() {
   }
 
   const svg = `
-<svg width="580" height="${height}" xmlns="http://www.w3.org/2000/svg">
+<svg width="560" height="${height}" xmlns="http://www.w3.org/2000/svg">
   <style>
     .title { font-family: 'Segoe UI'; font-size: 20px; fill: ${nameColor}; }
     .subtitle { font-family: 'Segoe UI'; font-size: 14px; fill: #ccc; }
@@ -92,7 +92,7 @@ async function generateSVG() {
     .count { font-family: 'Segoe UI'; font-size: 12px; fill: #fff; }
   </style>
 
-  <rect width="540" height="${height}" rx="16" fill="#000"/>
+  <rect width="560" height="${height}" rx="16" fill="#000"/>
 
   ${avatarBase64 ? `<image x="20" y="20" width="96" height="96" href="${avatarBase64}" />` : ''}
 
