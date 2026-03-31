@@ -84,7 +84,7 @@ async function generateSVG() {
   }
 
   const svg = `
-<svg width="540" height="${height}" xmlns="http://www.w3.org/2000/svg">
+<svg width="580" height="${height}" xmlns="http://www.w3.org/2000/svg">
   <style>
     .title { font-family: 'Segoe UI'; font-size: 20px; fill: ${nameColor}; }
     .subtitle { font-family: 'Segoe UI'; font-size: 14px; fill: #ccc; }
