@@ -28,10 +28,10 @@
 
   <!-- Level -->
   <circle cx="35" cy="170" r="16" fill="#2e8b57"/>
-  <text x="29" y="174" font-size="12" fill="#fff">49</text>
+  <text x="29" y="174" font-size="12" fill="#fff">50</text>
 
   <!-- Games -->
-  <text x="70" y="174" class="count">325 Games</text>
+  <text x="70" y="174" class="count">326 Games</text>
 
   <!-- ICONOS (restaurados) -->
   <image x="160" y="152" width="40" height="40"
