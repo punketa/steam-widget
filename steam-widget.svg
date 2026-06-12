@@ -1,6 +1,6 @@
 <svg width="560" height="200" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .title { font-family: 'Segoe UI'; font-size: 20px; fill: #888; }
+    .title { font-family: 'Segoe UI'; font-size: 20px; fill: #1E90FF; }
     .subtitle { font-family: 'Segoe UI'; font-size: 14px; fill: #ccc; }
     .label { font-family: 'Segoe UI'; font-size: 12px; fill: #aaa; }
     .count { font-family: 'Segoe UI'; font-size: 12px; fill: #fff; }
@@ -15,7 +15,7 @@
 
   <text x="130" y="95" class="subtitle">
     Currently : 
-    Offline
+    Online
   </text>
 
   <!-- ⭐ FAVORITE TITLE ALINEADO -->
@@ -31,7 +31,7 @@
   <text x="29" y="174" font-size="12" fill="#fff">50</text>
 
   <!-- Games -->
-  <text x="70" y="174" class="count">326 Games</text>
+  <text x="70" y="174" class="count">329 Games</text>
 
   <!-- ICONOS (restaurados) -->
   <image x="160" y="152" width="40" height="40"
